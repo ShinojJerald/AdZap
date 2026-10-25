@@ -119,4 +119,4 @@ AdZap is free. If it's useful to you, you can [buy me a coffee](https://buymeaco
 
 AdZap's blocking rules are compiled from EasyList and EasyPrivacy by [the EasyList authors](https://easylist.to/), used under GPL-3.0 or CC BY-SA 3.0. See [LICENSES.md](LICENSES.md).
 
-Made by [Shinoj Jerald](https://github.com/ShinojJerald).
+Made by [TuneKadal](https://tunekadal.com/). © 2026 TuneKadal. All rights reserved.

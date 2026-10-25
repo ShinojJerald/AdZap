@@ -27,4 +27,6 @@ rules that Chrome cannot load were left out or split into equivalent rules.
 ## AdZap
 
 AdZap's own code (`background/`, `popup/`, `manifest.json`) and its icons
-are by Shinoj Jerald.
+are © 2026 TuneKadal. All rights reserved. They may not be copied, modified
+or redistributed without written permission from TuneKadal. The filter-list
+material described above stays under its own licences.
