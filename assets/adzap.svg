@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="t d">
+  <title id="t">AdZap — Choose the sites. Zap the ads.</title>
+  <desc id="d">Illustration: a browser window where the AdZap bolt is pressed and the ad boxes on that one site fade away. AdZap is a Chrome extension that blocks ads and trackers only on the websites you choose.</desc>
+  <defs>
+    <linearGradient id="zbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a1236"/>
+      <stop offset="1" stop-color="#0d0a20"/>
+    </linearGradient>
+    <radialGradient id="zglow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#7c5cff" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#7c5cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="zbrand" x1="0" x2="1">
+      <stop offset="0" stop-color="#9b6bff"/>
+      <stop offset="1" stop-color="#7c5cff"/>
+    </linearGradient>
+    <clipPath id="zc"><rect width="1200" height="300" rx="24"/></clipPath>
+    <style>
+      .sans{font-family:Inter,'Segoe UI',-apple-system,Helvetica,Arial,sans-serif}
+      .mono{font-family:'JetBrains Mono','SFMono-Regular',Consolas,monospace}
+      .ad{transform-box:fill-box;transform-origin:center;animation:ad 8s ease-in-out infinite}
+      .flash{animation:flash 8s ease-in-out infinite}
+      .chip{animation:chip 8s ease-in-out infinite}
+      .ring{transform-box:fill-box;transform-origin:center;animation:ring 8s ease-out infinite}
+      .cur{animation:cur 8s ease-in-out infinite}
+      .pulse{animation:pulse 2.4s ease-in-out infinite alternate}
+      @keyframes ad{0%,30%{opacity:1;transform:scale(1)}40%,86%{opacity:0;transform:scale(.6)}94%,100%{opacity:1;transform:scale(1)}}
+      @keyframes flash{0%,26%{opacity:0}30%{opacity:1}44%,100%{opacity:0}}
+      @keyframes chip{0%,36%{opacity:0}44%,86%{opacity:1}94%,100%{opacity:0}}
+      @keyframes ring{0%,27%{opacity:0;transform:scale(.4)}30%{opacity:.9}46%,100%{opacity:0;transform:scale(2.2)}}
+      @keyframes cur{0%,8%{transform:translate(-120px,90px);opacity:0}14%{opacity:1}26%,34%{transform:translate(0,0);opacity:1}48%,100%{transform:translate(-60px,70px);opacity:0}}
+      @keyframes pulse{to{opacity:.55}}
+      @media (prefers-reduced-motion:reduce){.ad,.flash,.chip,.ring,.cur,.pulse{animation:none}.flash,.ring,.cur{opacity:0}.chip{opacity:1}.ad{opacity:.25}}
+    </style>
+  </defs>
+  <g clip-path="url(#zc)">
+    <rect width="1200" height="300" fill="url(#zbg)"/>
+    <ellipse cx="860" cy="130" rx="380" ry="200" fill="url(#zglow)"/>
+    <ellipse cx="150" cy="40" rx="260" ry="140" fill="url(#zglow)" opacity=".6"/>
+
+    <!-- wordmark -->
+    <g transform="translate(60 72)">
+      <rect width="64" height="64" rx="16" fill="#16102e" stroke="#7c5cff" stroke-opacity=".55"/>
+      <path transform="translate(8 8) scale(2)" d="M13 2 4.5 13.5h5.2L8.6 22l9.9-12.2h-5.6L13 2z" fill="url(#zbrand)"/>
+      <text x="84" y="47" class="sans" font-size="46" font-weight="600" fill="#eceafd" letter-spacing=".3">Ad<tspan font-weight="800" fill="#9b6bff">Zap</tspan></text>
+    </g>
+    <text x="60" y="186" class="sans" font-size="27" font-weight="600" fill="#eceafd">Choose the sites. Zap the ads.</text>
+    <text x="60" y="220" class="sans" font-size="17" fill="#b7b1dc">Blocks ads and trackers only on the websites you pick.</text>
+    <text x="60" y="258" class="mono" font-size="13.5" fill="#9d97c0" letter-spacing=".6">CHROME EXTENSION · PER-SITE OPT-IN · v1.1.0</text>
+
+    <!-- browser window (illustration) -->
+    <g transform="translate(640 40)">
+      <rect width="500" height="222" rx="14" fill="#120d28" stroke="#3a3168"/>
+      <path d="M0 14a14 14 0 0 1 14-14h472a14 14 0 0 1 14 14v26H0z" fill="#1d1640"/>
+      <circle cx="20" cy="20" r="5" fill="#4b4570"/><circle cx="37" cy="20" r="5" fill="#4b4570"/><circle cx="54" cy="20" r="5" fill="#4b4570"/>
+      <rect x="76" y="9" width="330" height="22" rx="11" fill="#0d0a20"/>
+      <text x="92" y="25" class="mono" font-size="12" fill="#9d97c0">example.com</text>
+      <!-- zapped chip -->
+      <g class="chip">
+        <rect x="318" y="12" width="80" height="16" rx="8" fill="#34d399"/>
+        <text x="358" y="24" class="sans" font-size="10" font-weight="800" fill="#06281c" text-anchor="middle" letter-spacing="1">ZAPPED</text>
+      </g>
+      <!-- toolbar bolt button -->
+      <g transform="translate(436 6)">
+        <circle class="ring" cx="14" cy="14" r="14" fill="none" stroke="#9b6bff" stroke-width="2"/>
+        <rect width="28" height="28" rx="8" fill="#2a2152"/>
+        <path transform="translate(3 3) scale(.92)" d="M13 2 4.5 13.5h5.2L8.6 22l9.9-12.2h-5.6L13 2z" fill="#9b6bff" class="pulse"/>
+        <rect class="flash" width="28" height="28" rx="8" fill="#9b6bff" opacity="0"/>
+      </g>
+      <!-- page content -->
+      <rect x="24" y="60" width="210" height="12" rx="6" fill="#3a3168"/>
+      <rect x="24" y="84" width="280" height="8" rx="4" fill="#2a2350"/>
+      <rect x="24" y="100" width="260" height="8" rx="4" fill="#2a2350"/>
+      <rect x="24" y="116" width="270" height="8" rx="4" fill="#2a2350"/>
+      <rect x="24" y="148" width="280" height="8" rx="4" fill="#2a2350"/>
+      <rect x="24" y="164" width="240" height="8" rx="4" fill="#2a2350"/>
+      <rect x="24" y="180" width="265" height="8" rx="4" fill="#2a2350"/>
+      <!-- ad boxes -->
+      <g class="ad">
+        <rect x="330" y="58" width="146" height="70" rx="8" fill="#241c48" stroke="#f87171" stroke-opacity=".7" stroke-dasharray="5 4"/>
+        <text x="403" y="99" class="mono" font-size="13" fill="#f87171" text-anchor="middle" letter-spacing="2">AD</text>
+      </g>
+      <g class="ad">
+        <rect x="330" y="140" width="146" height="58" rx="8" fill="#241c48" stroke="#f87171" stroke-opacity=".7" stroke-dasharray="5 4"/>
+        <text x="403" y="174" class="mono" font-size="13" fill="#f87171" text-anchor="middle" letter-spacing="2">AD</text>
+      </g>
+      <!-- cursor -->
+      <g class="cur" transform="translate(-120 90)">
+        <path transform="translate(452 24)" d="M0 0v18l5-5 3.5 7 3-1.5-3.5-7H15z" fill="#fff" stroke="#16102e" stroke-width="1.2"/>
+      </g>
+    </g>
+  </g>
+</svg>
