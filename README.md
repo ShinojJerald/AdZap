@@ -13,12 +13,13 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ShinojJerald/AdZap/releases/latest"><b>Download AdZap 1.1.0</b></a> &nbsp;·&nbsp;
+  <a href="https://github.com/ShinojJerald/AdZap/releases/latest"><b>Download AdZap 1.2.0</b></a> &nbsp;·&nbsp;
   <a href="https://tunekadal.com/software/adzap/">Product page</a> &nbsp;·&nbsp;
-  <a href="https://github.com/ShinojJerald/AdZap/issues">Report an issue</a>
+  <a href="https://github.com/ShinojJerald/AdZap/issues">Report an issue</a> &nbsp;·&nbsp;
+  <a href="https://buymeacoffee.com/tunekadal">Buy me a coffee</a>
 </p>
 
-<p align="center"><sub>Google Chrome 116 or later · Free · Version 1.1.0 · Not in the Chrome Web Store</sub></p>
+<p align="center"><sub>Google Chrome 116 or later · Free · Version 1.2.0 · Not in the Chrome Web Store</sub></p>
 
 This repository holds AdZap's releases and documentation.
 
@@ -27,10 +28,12 @@ This repository holds AdZap's releases and documentation.
 AdZap starts switched off. Nothing is filtered until you choose a site.
 
 1. **Open a site** whose ads or trackers you want gone.
-2. **Zap it.** Click the AdZap bolt in Chrome's toolbar and press **ZAP ADS**. The page reloads with blocking on for that site.
+2. **Zap it.** Click the AdZap bolt in Chrome's toolbar and press **ZAP ADS**. The page reloads with blocking on for that site, and the button shows **ZAPPED ✓**.
 3. **Undo any time.** Press **Unzap this site** in the same menu, or <kbd>Alt</kbd>+<kbd>Z</kbd>, and the site goes back to normal.
 
 Zapping `example.com` also covers its subdomains, such as `news.example.com`. Zapping `news.example.com` covers only that subdomain.
+
+The bottom of the menu has links to this page on GitHub, **Share** (copy the link, or share it on X, WhatsApp or by email), **Buy me a coffee**, **Report a problem** and **Check for updates**, and shows the version you have.
 
 ## What it blocks
 
@@ -48,7 +51,7 @@ AdZap also hides leftover ad slots and banners on zapped pages with element-hidi
 
 AdZap isn't listed in the Chrome Web Store, so it's installed as an unpacked extension.
 
-1. Download `adzap-1.1.0.zip` from the [latest release](https://github.com/ShinojJerald/AdZap/releases/latest).
+1. Download `adzap-1.2.0.zip` from the [latest release](https://github.com/ShinojJerald/AdZap/releases/latest).
 2. Extract it to a folder you'll keep, such as `Documents\AdZap`. Chrome runs AdZap from that folder, so don't delete or move it.
 3. Open `chrome://extensions` in Chrome.
 4. Turn on **Developer mode** (top-right corner).
@@ -60,25 +63,25 @@ AdZap isn't listed in the Chrome Web Store, so it's installed as an unpacked ext
 In PowerShell, in the folder with the ZIP:
 
 ```powershell
-Get-FileHash .\adzap-1.1.0.zip
+Get-FileHash .\adzap-1.2.0.zip
 ```
 
-On a Mac or Linux: `shasum -a 256 adzap-1.1.0.zip`. The SHA-256 hash should be:
+On a Mac or Linux: `shasum -a 256 adzap-1.2.0.zip`. The SHA-256 hash should be:
 
 ```
-381378495486f0488b6ee1465b33fd96049a1216069cbb2778b9c9076631aa56
+684612b55950a02f44c52d422f3207af855bf88aac57663e6aa7b3aab7a3f0e5
 ```
 
-It's also listed in `adzap-1.1.0-SHA256SUMS.txt` on the release.
+It's also listed in `adzap-1.2.0-SHA256SUMS.txt` on the release.
 
 ### Update or remove
 
-- **Update:** replace the files in your AdZap folder with the new version, then press reload on AdZap's card in `chrome://extensions`. AdZap doesn't update itself.
+- **Update:** AdZap doesn't update itself. **Check for updates** in its menu opens the latest release. Replace the files in your existing AdZap folder with the new version, then press reload on AdZap's card in `chrome://extensions`. Keep the same folder: Chrome treats an unpacked extension loaded from a different folder as a new extension, without your zapped sites.
 - **Remove:** press **Remove** on AdZap's card in `chrome://extensions`. Chrome deletes AdZap's saved list and counts with it.
 
 ## Privacy
 
-- **What it sends:** AdZap's own code makes no network requests. It only loads files that come inside the extension. There's no account, no analytics and no AdZap server.
+- **What it sends:** AdZap's own code makes no network requests. It only loads files that come inside the extension. There's no account, no analytics and no AdZap server. The links at the bottom of the menu (GitHub, Share, Buy me a coffee, Report a problem, Check for updates) open only when you click them. **Report a problem** starts an email in your mail app with your AdZap version and the current site filled in, so you can see what you're sending before you send it.
 - **What it keeps, in Chrome on your computer:** the sites you've zapped (with the date you zapped each one); blocked-request counts (an all-time total and one for each of the last 30 days, numbers only); per-tab counts and the site each tab is showing, cleared when Chrome closes; and whether its rule lists turned on correctly.
 
 ### Permissions
@@ -106,7 +109,11 @@ It's also listed in `adzap-1.1.0-SHA256SUMS.txt` on the release.
 
 ## Report a problem
 
-[Open an issue](https://github.com/ShinojJerald/AdZap/issues) with your Chrome version, the site and what happened.
+Press **Report a problem** in AdZap's menu, or email [hello@tunekadal.com](mailto:hello@tunekadal.com). You can also [open an issue](https://github.com/ShinojJerald/AdZap/issues). Include your Chrome version, the site and what happened.
+
+## Support AdZap
+
+AdZap is free. If it's useful to you, you can [buy me a coffee](https://buymeacoffee.com/tunekadal).
 
 ## Licences
 
